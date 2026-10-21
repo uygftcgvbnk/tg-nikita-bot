@@ -1,0 +1,39 @@
+{
+  "promos": {},
+  "user_discounts": {
+    "8210263644": 10,
+    "7828277438": 20
+  },
+  "stats": {
+    "total_sales_count": 0,
+    "total_stars_earned": 0,
+    "orders": []
+  },
+  "verified_users": [
+    8567645826,
+    7461079464,
+    8210263644,
+    7828277438,
+    7789981941
+  ],
+  "catalog": {
+    "cute": {
+      "title": "Милый",
+      "stars": 25,
+      "image": "C:\\Users\\osnov\\.gemini\\antigravity\\scratch\\ddnet_art_bot\\media_1792578748835_98d58b72.png",
+      "description": ""
+    },
+    "bust_mono": {
+      "title": "Сисястый с однотонным фоном",
+      "stars": 75,
+      "image": "C:\\Users\\osnov\\.gemini\\antigravity\\scratch\\ddnet_art_bot\\media_1792578747339_b0b59663.png",
+      "description": ""
+    },
+    "bust_bg": {
+      "title": "Сисястый с фоном",
+      "stars": 100,
+      "image": "C:\\Users\\osnov\\.gemini\\antigravity\\scratch\\ddnet_art_bot\\media_1792578745788_77a5fb37.png",
+      "description": ""
+    }
+  }
+}
