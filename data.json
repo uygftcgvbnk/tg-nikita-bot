@@ -20,19 +20,19 @@
     "cute": {
       "title": "Милый",
       "stars": 25,
-      "image": "C:\\Users\\osnov\\.gemini\\antigravity\\scratch\\ddnet_art_bot\\media_1792578748835_98d58b72.png",
+      "image": "media_1792578748835_98d58b72.png",
       "description": ""
     },
     "bust_mono": {
       "title": "Сисястый с однотонным фоном",
       "stars": 75,
-      "image": "C:\\Users\\osnov\\.gemini\\antigravity\\scratch\\ddnet_art_bot\\media_1792578747339_b0b59663.png",
+      "image": "media_1792578747339_b0b59663.png",
       "description": ""
     },
     "bust_bg": {
       "title": "Сисястый с фоном",
       "stars": 100,
-      "image": "C:\\Users\\osnov\\.gemini\\antigravity\\scratch\\ddnet_art_bot\\media_1792578745788_77a5fb37.png",
+      "image": "media_1792578745788_77a5fb37.png",
       "description": ""
     }
   }
