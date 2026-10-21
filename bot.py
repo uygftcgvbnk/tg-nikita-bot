@@ -315,6 +315,8 @@ async def handle_examples(message: types.Message):
 
         img_path = item.get("image")
         file_id = item.get("file_id")
+        if img_path and not os.path.isabs(img_path):
+            img_path = os.path.join(BASE_DIR, img_path)
 
         if file_id:
             await message.answer_photo(photo=file_id, caption=caption, reply_markup=buy_markup, parse_mode="HTML")
