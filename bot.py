@@ -1,3 +1,4 @@
+import aiohttp.web
 import asyncio
 import json
 import logging
@@ -835,8 +836,23 @@ async def handle_del_art_action(callback: types.CallbackQuery):
     await handle_delete_art_menu(callback)
 
 
+
+async def start_health_server():
+    port = int(os.environ.get("PORT", 8080))
+    app = aiohttp.web.Application()
+    async def index(request):
+        return aiohttp.web.Response(text="Bot is running!")
+    app.router.add_get("/", index)
+    app.router.add_get("/healthz", index)
+    runner = aiohttp.web.AppRunner(app)
+    await runner.setup()
+    site = aiohttp.web.TCPSite(runner, "0.0.0.0", port)
+    await site.start()
+    logging.info(f"Health server started on port {port}")
+
 async def main():
     print("Бот DDNet Art запущен...")
+    await start_health_server()
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
